@@ -150,14 +150,14 @@ div.menu h2.titulosGenero {
   margin-top: 20px;
   padding-top: 20px;
 }
-div.menu h3.accion {
+div.menu h3 {
   font-size: 1.1em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
   color: yellow;
-
   margin-top: 20px;
   padding-top: 20px;
+  margin-left: 20px;
 }
 footer { background-color: black;
   position: absolute;
