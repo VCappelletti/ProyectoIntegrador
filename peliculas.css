@@ -24,7 +24,7 @@ nav {
 width: 100%;
 
 
-height:90px;
+height:75px;
 display: flex;
 flex-wrap: wrap;
 
@@ -49,8 +49,6 @@ ul.elresto {
   margin-top: 25px;
 }
 
-li.genero { position: relative;
-  left:22%;
 
 }
 
@@ -59,11 +57,9 @@ div.generos a:hover {
   opacity: 0.8
 }
 
-li.ultimo { position: relative;
-  left : 22%;
-  color:yellow;
-  list-style-type: none;
-  font-size: 1.5em;
+
+div.ultimo,div.favoritos,  div.Populares, div.generos  {
+  font-size: 1em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
   margin-top: 2px;
@@ -71,8 +67,10 @@ li.ultimo { position: relative;
 
 }
 
-div.buscador { position: relative;
-  left: 22%;
+div.buscador {
+      margin-top: -6px;
+      position: relative;
+}
 
 div.ultimo a,div.favoritos a,  div.Populares a, div.generos a  { color: yellow;
 
@@ -117,18 +115,22 @@ letter-spacing: 1px;
 
 }
 
-div.favoritos { color: yellow;
-  z-index: 4;
 
-
+div.favoritos a:hover  {
+  opacity: 0.8
 
 
 }
 
 
+div.Populares a:hover {
+opacity: 0.8
 
-section.todoelbody { height: 2000px;
-margin-top: 90px;
+}
+
+
+section.todoelbody { height: 2100px;
+margin-top: 75px;
 z-index: 0;
 background-image: url("spacee.jpg");
 background-size: cover;
@@ -160,6 +162,7 @@ box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
 width: 100%;
 top: 2080px;
 left: 0;
+padding-right: 0;
 height: 150px;
 }
 
@@ -177,10 +180,3 @@ img.tmdb { position: absolute;
   z-index: 5;
   height: 85px;
   width: 217px;
-
-
-
-
-
-
-}
