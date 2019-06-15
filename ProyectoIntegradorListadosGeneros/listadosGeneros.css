@@ -27,15 +27,11 @@ flex-wrap: wrap;
 
 ul.LOGO {
   width: 20%;
-
-
 }
-
 img.img-logo {
   position: relative;
   width: 192px;
 }
-
 ul.elresto {
   padding-left: 0;
   display: flex;
@@ -44,43 +40,24 @@ ul.elresto {
   margin-top: 25px;
 }
 
-
-}
-
 div.generos a:hover {
-
   opacity: 0.8
 }
-
-
 div.ultimo,div.favoritos,  div.Populares, div.generos  {
   font-size: 1em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
   margin-top: 2px;
-
-
 }
-
 div.buscador {
       margin-top: -6px;
       position: relative;
 }
-
 div.ultimo a,div.favoritos a,  div.Populares a, div.generos a  { color: yellow;
-
-
-
 }
 div.ultimo a:hover {
 opacity: 0.8
-
 }
-
-
-
-
-
 .barradebusqueda {height: 35px;
 font-family: 'Ropa Sans', sans-serif;
 text-align: left ;
@@ -89,15 +66,11 @@ letter-spacing: 1px;
   width: 250px;
   box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   border: none;
-
-
 }
-
 .boton {
   position: absolute;
   top:-2px;
   left: 210px;
-
   color: lightgray;
   height: 40px;
   width:40px;
@@ -105,25 +78,13 @@ letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
-
-
 div.favoritos a:hover  {
   opacity: 0.8
-
-
 }
-
-
 div.Populares a:hover {
 opacity: 0.8
-
 }
-
-
 section.todoelbody { height: 2100px;
 margin-top: 75px;
 z-index: 0;
@@ -131,13 +92,11 @@ background-image: url("../spacee.jpg");
 background-size: cover;
 margin-left: -10px;
 }
-
 div.menu { width: 90%;
   position: relative;
-
   margin: 0 auto;
   height: 92%;
-box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+  box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   background-color: black;
   z-index: 0;
 }
@@ -150,6 +109,56 @@ div.menu h2.titulosGenero {
   margin-top: 20px;
   padding-top: 20px;
 }
+div.menu p {
+  color: yellow;
+  font-size: 0.7em;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  padding: 15px;
+}
+div.menu div {
+  float: left;
+  width: 30%;
+  height: 350px;
+  text-align: center;
+  margin-left: 2.5%;
+  margin-bottom: 125px;
+  position: relative;
+}
+div.menu div:hover {
+  opacity: 0.6;
+}
+div.menu div.acciones img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div.menu div.comedias img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div.menu div.ficciones img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div.menu div.romances img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+div.menu div.terrores img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
+
+div.menu div.aventuras img {
+  position: relative;
+  width: 100%;
+  height: 100%;
+}
 div.menu h3 {
   font-size: 1.1em;
   font-weight: bold;
@@ -157,8 +166,36 @@ div.menu h3 {
   color: yellow;
   margin-top: 20px;
   padding-top: 20px;
-  margin-left: 20px;
+  position: absolute;
+  width: 100%;
+  top: 36%;
 }
+
+div.menu div.acciones a {
+  color: yellow;
+  text-decoration: none;
+}
+div.menu div.comedias a {
+  color: yellow;
+  text-decoration: none;
+}
+div.menu div.ficciones a {
+  color: yellow;
+  text-decoration: none;
+}
+div.menu div.romances a {
+  color: yellow;
+  text-decoration: none;
+}
+div.menu div.terrores a {
+  color: yellow;
+  text-decoration: none;
+}
+div.menu div.aventuras a {
+  color: yellow;
+  text-decoration: none;
+}
+
 footer { background-color: black;
   position: absolute;
 box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
