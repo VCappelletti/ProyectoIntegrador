@@ -116,6 +116,9 @@ div.menu p {
   font-family: 'Press Start 2P', cursive;
   padding: 15px;
 }
+div.menu p.intro {
+  font-size: 1em;
+}
 div.menu div {
   float: left;
   width: 30%;

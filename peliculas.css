@@ -1,46 +1,30 @@
 * {box-sizing: border-box;}
 
-header { width: 100%;
-position: fixed;
-z-index: 2;
-box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
-left: 0;
-
-background-color: black;
-top: 0;}
-
+header {
+  width: 100%;
+  position: fixed;
+  z-index: 2;
+  box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
+  left: 0;
+  background-color: black;
+  top: 0;}
 img {object-fit: cover;
-width: 200px;
-height:40px;
-
-
+  width: 200px;
+  height:40px;
 }
-
 body {width: 100%;}
-
 nav {
-
-
-width: 100%;
-
-
-height:75px;
-display: flex;
-flex-wrap: wrap;
-
+  width: 100%;
+  height:75px;
+  display: flex;
+  flex-wrap: wrap;
 }
-
 ul.LOGO {
   width: 20%;
-
-
 }
-
 img.img-logo { position: relative;
-
   width: 192px;
 }
-
 ul.elresto {
   padding-left: 0;
   display: flex;
@@ -48,61 +32,37 @@ ul.elresto {
   justify-content: space-around;
   margin-top: 25px;
 }
-
-
-}
-
 div.generos a:hover {
-
   opacity: 0.8
 }
-
-
 div.ultimo,div.favoritos,  div.Populares, div.generos  {
   font-size: 1em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
   margin-top: 2px;
-
-
 }
-
 div.buscador {
       margin-top: -6px;
       position: relative;
 }
-
 div.ultimo a,div.favoritos a,  div.Populares a, div.generos a  { color: yellow;
-
-
-
 }
 div.ultimo a:hover {
 opacity: 0.8
-
 }
-
-
-
-
-
 .barradebusqueda {height: 35px;
-font-family: 'Ropa Sans', sans-serif;
-text-align: left ;
-letter-spacing: 1px;
+  font-family: 'Ropa Sans', sans-serif;
+  text-align: left ;
+  letter-spacing: 1px;
   border-radius: 50px;
   width: 250px;
   box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   border: none;
-
-
 }
-
 .boton {
   position: absolute;
   top:-2px;
   left: 210px;
-
   color: lightgray;
   height: 40px;
   width:40px;
@@ -110,60 +70,38 @@ letter-spacing: 1px;
   display: flex;
   justify-content: center;
   align-items: center;
-
-
-
 }
-
-
 div.favoritos a:hover  {
   opacity: 0.8
-
-
 }
-
-
 div.Populares a:hover {
-opacity: 0.8
-
+  opacity: 0.8
 }
-
-
-section.todoelbody { height: 2100px;
-margin-top: 75px;
-z-index: 0;
-background-image: url("spacee.jpg");
-background-size: cover;
-margin-left: -10px;
+section.todoelbody {
+  height: 2100px;
+  margin-top: 75px;
+  z-index: 0;
+  background-image: url("spacee.jpg");
+  background-size: cover;
+  margin-left: -10px;
 }
-
-div.menu { width: 90%;
+div.menu {
+  width: 90%;
   position: relative;
-
   margin: 0 auto;
   height: 92%;
-box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+  box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   background-color: black;
   z-index: 0;
-
-
 }
-img.beatle {position: absolute;
-z-index: 100;
-height: 400px;
-width: 400px;
-top:1%;
-left: 1%;
-}
-
 footer { background-color: black;
   position: absolute;
-box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
-width: 100%;
-top: 2080px;
-left: 0;
-padding-right: 0;
-height: 150px;
+  box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
+  width: 100%;
+  top: 2080px;
+  left: 0;
+  padding-right: 0;
+  height: 150px;
 }
 
 footer h2 {
