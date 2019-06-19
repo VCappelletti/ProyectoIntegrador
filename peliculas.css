@@ -46,7 +46,7 @@ div.ultimo,div.favoritos,  div.Populares, div.generos  {
   font-family: 'Press Start 2P', cursive;
   margin-top: 2px;
 }
-div.buscador {
+form.busqueda {
       margin-top: -6px;
       position: relative;
 }
