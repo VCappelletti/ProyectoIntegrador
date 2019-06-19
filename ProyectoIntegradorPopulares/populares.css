@@ -191,7 +191,22 @@ h2.tituloPopulares{   font-size: 1.5em;
   color: yellow;
   text-align: center;
   padding-top:20px
-
-
-
+}
+  h3{   font-size: 1em;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    margin-top: 20px;
+    color: yellow;
+    text-align: left;
+    padding-top:20px;
+    z-index: 1
+}
+h4{   font-size: 1em;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 20px;
+  color: yellow;
+  text-align: left;
+  padding-top:20px;
+  z-index: 1
 }
