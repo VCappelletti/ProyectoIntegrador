@@ -9,7 +9,7 @@ fetch(url)
 console.log(objetoLiteralRespuesta);
 var arrayPeliculas = objetoLiteralRespuesta.results
 
-var ul = 
+var ul =
 
 for (var i = 0; i < arrayPeliculas.length; i++) {
   arrayPeliculas[i]

@@ -41,7 +41,7 @@ div.generos a:hover {
   opacity: 0.8
 }
 div.ultimo,div.favoritos,  div.Populares, div.generos  {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
   margin-top: 2px;
@@ -98,6 +98,14 @@ div.menu {
   box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   background-color: black;
   z-index: 0;
+}
+div.menu div ul div.derecha {
+  position: absolute;
+  top: 145px;
+  right: 178px;
+}
+div.menu div ul {
+  position: relative;
 }
 div.menu div ul li p {
   font-size: 1.5em;
