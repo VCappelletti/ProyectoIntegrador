@@ -1,13 +1,13 @@
 * {box-sizing: border-box;}
 
-header { width: 100%;
+header {
+  width: 100%;
   position: fixed;
   z-index: 2;
   box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
   left: 0;
-
-background-color: black;
-top: 0;}
+  background-color: black;
+  top: 0;}
 
 img {
   object-fit: cover;
@@ -102,12 +102,12 @@ h2 {
   padding-top: 20px;
   padding-left: 15px;
 }
-section.todoelbody { height: 2100px;
-margin-top: 75px;
-z-index: 0;
-background-image: url("spacee.jpg");
-background-size: cover;
-margin-left: -10px;
+section.todoelbody {
+  margin-top: 75px;
+  z-index: 0;
+  background-image: url("spacee.jpg");
+  background-size: cover;
+  margin-left: -10px;
 }
 
 div.menu {
@@ -119,6 +119,36 @@ div.menu {
   background-color: black;
   z-index: 0;
 }
+div.menu div ul {
+  padding-left: 0;
+  overflow: hidden;
+}
+div.menu div ul li{
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  margin-left: 2%;
+  height: 700px;
+}
+div.menu div ul li:nth-child(3n){
+  margin-left: 0;
+  margin-right: 2%;
+}
+div.menu div ul li:nth-child(2n){
+  margin-left: 0;
+}
+div.menu div ul li a p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: yellow;
+}
+div.menu div ul li a img {
+      width: 100%;
+      height: 619px;
+    }
 /* Slideshow container */
 .slideshow-container {
   max-width: 1000px;

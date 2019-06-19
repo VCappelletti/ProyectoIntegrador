@@ -28,6 +28,7 @@ ul.LOGO {
 img.img-logo {
   position: relative;
   width: 192px;
+  height: 67px;
 }
 ul.elresto {
   padding-left: 0;
@@ -98,14 +99,14 @@ div.menu {
   background-color: black;
   z-index: 0;
 }
-footer { background-color: black;
+footer {
+  background-color: black;
   position: absolute;
   box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
   width: 100%;
   top: 2080px;
   left: 0;
   padding-right: 0;
-  height: 150px;
 }
 
 footer h2 {
@@ -113,7 +114,6 @@ footer h2 {
   font-family: 'Press Start 2P', cursive;
   font-size: 15px;
   padding-left: 20px;
-  padding-top: 10px;
 }
 
 img.tmdb { position: absolute;

@@ -21,9 +21,12 @@
                       <a style="text-decoration:none" href="listadosGeneros.html">Genero</a></div>
                       <div class="ultimo"><a  style="text-decoration:none" href="../ProyectoIntegradorEstrenos/estrenos.html">Estrenos</a></div>
                       <div class="buscador">
-                        <input class="barradebusqueda" type="text" name="" placeholder="¿Que quieres mirar?" >
-                        <a style="text-decoration: none" class="boton" href="#"><i class="fas fa-search"></i>
-                      </a>
+                        <form class="busqueda" action="busqueda.html" method="get">
+                          <input class="barradebusqueda" type="text" name="buscador" placeholder="¿Que quieres mirar?" >
+                          <button type="submit">Buscar</button>
+
+
+                        </form>
                       </div>
                       <div class="favoritos">
                       <a style="text-decoration:none" href="../ProyectoIntegradorFavoritos/favoritos.html">Favoritos</a>
@@ -38,35 +41,41 @@
          <div class="menu">
              <h2 class="titulosGenero">Generos</h2>
              <p class="intro">Mira las peliculas que mas te gusten, solo en Peliculas El Jedi</p>
-           <div class="acciones">
-             <a href="../ProyectoIntegradorGeneros/generos.html"><img src="accion.jpg" class="action" alt=""></a>
-             <h3 class="accion"><a href="../ProyectoIntegradorGeneros/generos.html">Accion</a></h3>
-             <p>Un género cinematográfico en el que prima la espectacularidad de las imágenes por medio de efectos de explosiones y combates con/sin armas cuerpo a cuerpo y persecuciones.</p>
+           <div class="acciones" id="accion">
+             <a href="../ProyectoIntegradorGeneros/generos.html?genero=accion"><img src="accion.jpg" class="action" alt="">
+               <h3 class="accion">Accion</h3>
+               <p>Un género cinematográfico en el que prima la espectacularidad de las imágenes por medio de efectos de explosiones y combates con/sin armas cuerpo a cuerpo y persecuciones.</p>
+             </a>
            </div>
            <div class="aventuras">
-            <a href="../ProyectoIntegradorGeneros/generos.html"><img src="jumanji.jpg" class="adventure"alt=""></a>
-            <h3 class="aventura"><a href="../ProyectoIntegradorGeneros/generos.html">Aventura</a></h3>
-            <p>El cine de aventuras es un género cinematográfico que refleja un mundo heroico de combates y aventuras, y en el que suele predominar la acción y valores caballerescos.</p>
+            <a href="../ProyectoIntegradorGeneros/generos.html?genero=aventura"><img src="jumanji.jpg" class="adventure"alt="">
+              <h3 class="aventura">Aventura</h3>
+              <p>El cine de aventuras es un género cinematográfico que refleja un mundo heroico de combates y aventuras, y en el que suele predominar la acción y valores caballerescos.</p>
+            </a>
            </div>
            <div class="comedias">
-             <a href="../ProyectoIntegradorGeneros/generos.html"><img src="comedia.jpg" class="comedy" alt=""></a>
-             <h3 class="comedia"><a href="../ProyectoIntegradorGeneros/generos.html">Comedia</a></h3>
-             <p>Genero cinematográfico que tiene como intención provocar humor, entretenimiento y/o risa en el espectador.</p>
+             <a href="../ProyectoIntegradorGeneros/generos.html?genero=comedia"><img src="comedia.jpg" class="comedy" alt="">
+               <h3 class="comedia">Comedia</h3>
+               <p>Genero cinematográfico que tiene como intención provocar humor, entretenimiento y/o risa en el espectador.</p>
+             </a>
            </div>
            <div class="ficciones">
-             <a href="../ProyectoIntegradorGeneros/generos.html"><img src="ficcion.jpg" class="fiction" alt=""></a>
-            <h3 class="ficcion"><a href="../ProyectoIntegradorGeneros/generos.html">Ficcion</a></h3>
-            <p>Género cinematográfico que utiliza representaciones especulativas basadas en la ciencia de fenómenos imaginarios como extraterrestres, planetas alienígenas y viajes en el tiempo.</p>
+             <a href="../ProyectoIntegradorGeneros/generos.html?genero=ficcion"><img src="ficcion.jpg" class="fiction" alt="">
+               <h3 class="ficcion">Ficcion</h3>
+               <p>Género cinematográfico que utiliza representaciones especulativas basadas en la ciencia de fenómenos imaginarios como extraterrestres, planetas alienígenas y viajes en el tiempo.</p>
+             </a>
            </div>
            <div class="romances">
-             <a href="../ProyectoIntegradorGeneros/generos.html"><img src="romance.jpg" class="romantic" alt=""></a>
-             <h3 class="romance"><a href="../ProyectoIntegradorGeneros/generos.html">Romance</a></h3>
-            <p>Género cinematográfico que retrata argumentos construidos de eventos y personajes relacionados con la expresión del amor y las relaciones románticas.</p>
+             <a href="../ProyectoIntegradorGeneros/generos.html?genero=romance"><img src="romance.jpg" class="romantic" alt="">
+               <h3 class="romance">Romance</h3>
+               <p>Género cinematográfico que retrata argumentos construidos de eventos y personajes relacionados con la expresión del amor y las relaciones románticas.</p>
+             </a>
            </div>
            <div class="terrores">
-            <a href="../ProyectoIntegradorGeneros/generos.html"><img src="it.jpg" class="teror" alt=""></a>
-            <h3 class="terror"><a href="../ProyectoIntegradorGeneros/generos.html">Terror</a></h3>
-            <p>Género cinematográfico caracterizado por su voluntad de provocar en el espectador sensaciones de pavor, terror, miedo, disgusto, repugnancia, incomodidad o preocupación.</p>
+            <a href="../ProyectoIntegradorGeneros/generos.html?genero=terror"><img src="it.jpg" class="teror" alt="">
+              <h3 class="terror">Terror</h3>
+              <p>Género cinematográfico caracterizado por su voluntad de provocar en el espectador sensaciones de pavor, terror, miedo, disgusto, repugnancia, incomodidad o preocupación.</p>
+            </a>
            </div>
 
 
@@ -84,8 +93,9 @@
               Eric Ryosho Shimizukawa
             </h2>
           </footer>
-  <script src="listadosGeneros.js" type="text/javascript">
-
-  </script>
   </body>
 </html>
+
+<script src="listadosGeneros.js" type="text/javascript">
+
+</script>
