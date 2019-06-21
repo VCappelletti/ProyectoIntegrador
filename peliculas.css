@@ -99,6 +99,13 @@ div.menu {
   background-color: black;
   z-index: 0;
 }
+p.login {
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  margin-top: 2px;
+  color: yellow;
+}
 footer {
   background-color: black;
   position: absolute;
