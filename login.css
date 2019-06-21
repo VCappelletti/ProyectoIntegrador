@@ -8,16 +8,14 @@ header {
   position: fixed;
   z-index: 2;
   box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
-  left: 0;
   background-color: black;
   top: 0;
-  color: black;
 }
 
 img {
   object-fit: cover;
   width: 200px;
-  height:40px;
+  height: 40px;
 }
 body {
   width: 100%;
