@@ -259,4 +259,24 @@ img.tmdb { position: absolute;
   top: 22%;
   z-index: 5;
   height: 85px;
-  width: 217px;
+  width: 217px;}
+
+
+
+
+
+
+  @media only screen and (max-width: 420px){
+
+
+
+
+  div.mySlides1 { width: 100%;
+
+
+  }
+
+
+
+
+  }
