@@ -112,8 +112,9 @@ div.menu div ul li a p {
     font-size: 1em;
     font-weight: bold;
     font-family: 'Press Start 2P', cursive;
-    text-decoration: none;
     color: yellow;
+    text-decoration: underline;
+    text-decoration-color: black;
 }
 div.menu div ul li a img {
       width: 100%;
