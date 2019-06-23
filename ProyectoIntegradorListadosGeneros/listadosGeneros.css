@@ -225,3 +225,101 @@ img.tmdb { position: absolute;
   z-index: 5;
   height: 85px;
   width: 217px;
+}
+
+
+
+
+
+
+  @media only screen and (max-width: 420px){
+
+    header { width: 100%;
+    position: fixed;
+    z-index: 2;
+    box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
+    left: 0;
+    height: 200px;
+    background-color: black;
+    top: 0;}
+
+    div.ultimo,div.favoritos,  div.Populares, div.generos  {
+      font-size: 0.7em;
+      font-weight: bold;
+      font-family: 'Press Start 2P', cursive;
+      margin-top: 2px;
+    }
+
+    ul.LOGO {
+      width: 20%;
+      position: absolute;
+      left: 12%;
+
+    }
+
+    .barradebusqueda {height: 30px;
+      position: absolute;
+      top: 70px;
+    font-family: 'Ropa Sans', sans-serif;
+    text-align: left ;
+    letter-spacing: 1px;
+      border-radius: 50px;
+      width: 150px;
+      box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+      border: none;
+    }
+
+    div.generos { margin-top: 100px;
+      margin-left: 100px;
+
+    }
+
+    section.todoelbody { height: 3450px;
+    margin-top: 200px;
+    z-index: 0;
+    background-image: url("../spacee.jpg");
+    background-size: cover;
+    margin-left: -10px;
+    }
+
+
+    div.menu { width: 90%;
+      position: relative;
+      margin: 0 auto;
+      height: 3150px;
+      box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+      background-color: black;
+      z-index: 0;}
+
+    div.menu div {
+      float: left;
+      width: 90%;
+      height: 350px;
+      margin-top: 10px;
+      text-align: center;
+      margin-left: 5%;
+      margin-bottom: 125px;
+      position: relative;
+
+  }
+
+
+  footer { background-color: black;
+    position: absolute;
+  box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
+  width: 100%;
+  top: 3400px;
+  left: 0;
+  padding-right: 0;
+  height: 270px;
+  }
+
+  img.tmdb { position: absolute;
+    left: 4%;
+    top: 60%;
+    z-index: 5;
+    height: 85px;
+    width: 217px;
+  }
+
+  }

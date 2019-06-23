@@ -29,7 +29,6 @@ ul.LOGO {
 img.img-logo {
   position: relative;
   width: 192px;
-  height: 67px;
 }
 ul.elresto {
   padding-left: 0;
@@ -47,7 +46,7 @@ div.ultimo,div.favoritos,  div.Populares, div.generos  {
   font-family: 'Press Start 2P', cursive;
   margin-top: 2px;
 }
-form.busqueda {
+div.buscador {
       margin-top: -6px;
       position: relative;
 }
@@ -65,6 +64,21 @@ opacity: 0.8
   box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   border: none;
 }
+
+button {
+border: none;
+position:absolute;
+background: none;
+top: 31%;
+color: gray;
+left: 64%;
+height: 40px;
+size: 40px;
+}
+
+
+}
+
 .boton {
   position: absolute;
   top:-2px;
@@ -100,21 +114,14 @@ div.menu {
   background-color: black;
   z-index: 0;
 }
-p.login {
-  font-size: 1em;
-  font-weight: bold;
-  font-family: 'Press Start 2P', cursive;
-  margin-top: 2px;
-  color: yellow;
-}
-footer {
-  background-color: black;
+footer { background-color: black;
   position: absolute;
   box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
   width: 100%;
   top: 2080px;
   left: 0;
   padding-right: 0;
+  height: 150px;
 }
 
 footer h2 {
@@ -122,6 +129,8 @@ footer h2 {
   font-family: 'Press Start 2P', cursive;
   font-size: 15px;
   padding-left: 20px;
+  padding-top: 10px;
+
 }
 
 img.tmdb { position: absolute;
@@ -129,4 +138,15 @@ img.tmdb { position: absolute;
   top: 22%;
   z-index: 5;
   height: 85px;
-  width: 217px;
+  width: 217px;}
+
+
+
+
+
+@media only screen and (max-width: 420px) {
+
+ 
+
+
+}
