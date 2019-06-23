@@ -15,6 +15,7 @@ img {
 }
 body {
   width: 100%;
+  margin-left: 0;
 }
 nav {
   width: 100%;
@@ -41,10 +42,9 @@ div.generos a:hover {
   opacity: 0.8
 }
 div.ultimo,div.favoritos,  div.Populares, div.generos  {
-  font-size: 1em;
+  font-size: 1.5em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
-  margin-top: 2px;
 }
 div.buscador {
       margin-top: -6px;
@@ -107,12 +107,13 @@ div.menu div ul li:nth-child(2n){
   margin-left: 0;
 }
 div.menu div ul li a p {
-    text-align: center;
-    font-size: 1em;
-    font-weight: bold;
-    font-family: 'Press Start 2P', cursive;
-    text-decoration: none;
-    color: yellow;
+  text-align: center;
+  font-size: 1em;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  text-decoration: underline;
+  text-decoration-color: black;
+  color: yellow;
 }
 div.menu div ul li a img {
       width: 100%;

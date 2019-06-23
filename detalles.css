@@ -15,6 +15,7 @@ img {
 }
 body {
   width: 100%;
+  margin-left: 0;
 }
 nav {
   width: 100%;
@@ -44,7 +45,6 @@ div.ultimo,div.favoritos,  div.Populares, div.generos  {
   font-size: 1.5em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
-  margin-top: 2px;
 }
 div.buscador {
       margin-top: -6px;

@@ -1,48 +1,23 @@
-window.onload = function() {
+var queryString = new URLSearchParams(window.location.search);
 
-  var urlParams = new URLSearchParams(window.location.search);
-  var genero = urlParams.get('genero');
-
-var elmnt = document.getElementById(genero);
-elmnt.scrollIntoView({behavior: 'smooth'});
-}
-//Buscador//
-window.addEventListener("load", function(){
-
-  var urlSearchParams = new URLSearchParams(window.location.search)
-  var buscador = urlSearchParams.get('buscador')
-  console.log(buscador);
-
-  var API_KEY = "928ad4dee3a02646fa1725b8bcaa2a96"
-  var url = "https://api.themoviedb.org/3/search/movie?api_key="+API_KEY+"&language=en-US&query="+buscador+"&page=1&include_adult=false"
-  fetch(url)
-    .then(function(response){
-      return response.json();
-    })
-    .then(function(objetoLiteralRespuesta) {
-      console.log(objetoLiteralRespuesta);
-      //GUARDO EL ARRAY DE PELIS
-      var arrayDePeliculas = objetoLiteralRespuesta.results
-      // CAPTURO EL UL
-      var ul = document.querySelector('section ul')
-
-      var li = ""
-      // PARTE FIJA DE LA URL DE LA IMAGEN
-      var urlImg = "https://image.tmdb.org/t/p/original"
-      // RECORRO EL ARRAY DE PELIS
-      for (var i = 0; i < arrayDePeliculas.length; i++) {
-          li = "<li>"
-          li +="<a href='detalles.html?idPelicula="+arrayDePeliculas[i].id+"'>"
-          li +=   "<p>"+arrayDePeliculas[i].title+"</p>"
-          li +=   "<img src='"+urlImg + arrayDePeliculas[i].poster_path+"' style='width:100%;'>"
-          li +="</a>"
-          li += "</li>"
-
-          ul.innerHTML += li
-      }
-    })
-    .catch(function(error) {
-      console.log("the error was: " + error);
-    })
-
+    var genre = queryString.get("genero");
+    var namegenre = queryString.get("nombre");
+      document.querySelector("main h2").innerHTML += namegenre + ' Movies'
+fetch("https://api.themoviedb.org/3/discover/movie?api_key=928ad4dee3a02646fa1725b8bcaa2a96&language=en-US&sort_by=popularity.desc&include_adult=false&include_video=false&page=1&with_genres=" + genre)
+.then(function(respuesta){
+ return respuesta.json()
 })
+.then(function(informacion){
+   console.log(informacion);
+
+   var arrayDePelis = informacion.results
+   for (var i = 0; i < arrayDePelis.length; i++) {
+     var titulo =  arrayDePelis[i].title
+     var url = arrayDePelis[i].poster_path
+     var id = arrayDePelis[i].id
+     var resumen = arrayDePelis[i].overview
+     var fecha = arrayDePelis[i].release_date
+     var puntos = arrayDePelis[i].vote_average
+
+     document.querySelector(".noMeFunciona").innerHTML +='<div class="general"><a class="poster" posArray="' + i + '" idPelicula="' + id + '" href="#modal-example" uk-toggle><img src="https://image.tmdb.org/t/p/original/'+ url +'" width="300px"></a></div>'
+   }})
