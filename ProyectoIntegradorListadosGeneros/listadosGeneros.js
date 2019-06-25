@@ -5,10 +5,16 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=928ad4dee3a02646fa1
 })
 .then(function(informacion){
    console.log(informacion);
-   var generos = informacion.genres
-
-   for (var i = 0; i < generos.length; i++) {
-     document.querySelector(".listado-generos").innerHTML += '<a id="ultimo" class="dropdown-item" href="listado.html?genero='+generos[i].id+'&nombre=' + generos[i].name + '">' + generos[i].name + '</a>'
+   var arrayDeGeneros = informacion.genres
+   var div = ""
+   for (var i = 0; i < arrayDeGeneros.length; i++) {
+     div = "<div>"
+     div +=   "<a herf='generos.html?idDeGenero="+ arrayDeGeneros[i].id +"'>"
+     div +=        arrayDeGeneros[i].name
+     div +=   "</a>"
+     div += "</div>"
+     document.querySelector("div.menu").innerHTML += div
+      // '<a id="ultimo" class="dropdown-item" href="listado.html?genero='+generos[i].id+'&nombre=' + generos[i].name + '">' + generos[i].name + '</a>'
    }
 
 
