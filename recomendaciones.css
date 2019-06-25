@@ -56,6 +56,11 @@ div.ultimo a,div.favoritos a,  div.Populares a, div.generos a  { color: yellow;
 div.ultimo a:hover {
 opacity: 0.8
 }
+
+form {
+position: relative;
+
+}
 .barradebusqueda {height: 35px;
   font-family: 'Ropa Sans', sans-serif;
   text-align: left ;
@@ -64,6 +69,18 @@ opacity: 0.8
   width: 250px;
   box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   border: none;
+}
+
+
+button {
+border: none;
+position:absolute;
+background: none;
+top: -4%;
+color: gray;
+left: 88%;
+height: 40px;
+size: 40px;
 }
 .boton {
   position: absolute;

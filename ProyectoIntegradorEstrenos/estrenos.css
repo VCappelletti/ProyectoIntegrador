@@ -85,7 +85,10 @@ opacity: 0.8
 }
 
 
+form {
+position: relative;
 
+}
 
 
 .barradebusqueda {height: 35px;
@@ -100,6 +103,16 @@ letter-spacing: 1px;
 
 }
 
+button {
+border: none;
+position:absolute;
+background: none;
+top: -4%;
+color: gray;
+left: 88%;
+height: 40px;
+size: 40px;
+}
 .boton {
   position: absolute;
   top:-2px;
