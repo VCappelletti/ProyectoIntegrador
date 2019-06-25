@@ -11,7 +11,7 @@ header {
 img {
   object-fit: cover;
   width: 200px;
-  height:40px;
+  height: 40px;
 }
 body {
   width: 100%;
@@ -29,6 +29,7 @@ ul.LOGO {
 img.img-logo {
   position: relative;
   width: 192px;
+  height: 65px;
 }
 ul.elresto {
   padding-left: 0;
@@ -146,7 +147,7 @@ img.tmdb { position: absolute;
 
 @media only screen and (max-width: 420px) {
 
- 
+
 
 
 }
