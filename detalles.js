@@ -64,4 +64,6 @@ window.addEventListener("load", function(){
 })
 
 
-function peliFavorita(id){console.log(id);}
+function peliFavorita(id){console.log(id);
+
+}
