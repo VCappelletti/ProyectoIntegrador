@@ -31,7 +31,7 @@ window.addEventListener("load", function(){
         genero += objetoLiteralRespuesta.genres[i].name
       }
       li +=   "<p> Genero:  "+genero+"</p>"
-      li +=   "<input type='button' value='Favoritos' class='boton-f' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>"
+      li +=   "<button type='button' value='Favoritos' class='boton-f' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>Agregar a Favoritos</button>"
 
 
 
@@ -64,25 +64,29 @@ window.addEventListener("load", function(){
 })
 
 
-function peliFavorita(id){
-  console.log(id);
-var favoritosArray = JSON.parse(window.sessionStorage.getItem("favoritosArray"))
-if (favoritosArray != null && favoritosArray.lenght>0) {
-  console.log("existe y no esta vacio");
-if (favoritosArray.indexOf(id)>-1) {
-   favoritosArray.splice(favoritosArray.indexOf(id),1)
-   document.querySelector("input.boton-f").innerHTML = "Agregar a Favoritos"}
-   else {
-     favoritosArray.push(id)
-     document.querySelector("input.boton-f").innerHTML = "Eliminar de Favoritos"
-   }
-   window.sessionStorage.setItem("favoritosArray", JSON.stringify(favoritosArray));
-   console.log(favoritosArray);
- } else {
-  favoritosArray = []
-  favoritosArray.push(id)
-  window.sessionStorage.setItem("favoritosArray",JSON.stringify(favoritosArray));
-  console.log("esta vacio");
-  console.log(favoritosArray);
- }
- }
+  function peliFavorita(id){
+    console.log(id);
+    var favoritosArray = JSON.parse(sessionStorage.getItem("peliFavorita"))
+    console.log(favoritosArray);
+    if (favoritosArray == null) {
+      favoritosArray = []
+      console.log("es nulo, creo el array");
+    }
+
+    if (favoritosArray.indexOf(id)<0) {
+      console.log("no esta en el array");
+      console.log(favoritosArray);
+      favoritosArray.push(id)
+      window.sessionStorage.setItem("peliFavorita",JSON.stringify(favoritosArray));
+
+      console.log(sessionStorage);
+      document.querySelector("li button").innerHTML = "Quitar a favoritos"
+    }else{
+      console.log("esta en el array");
+      favoritosArray.splice(favoritosArray.indexOf(id), 1)
+      console.log(favoritosArray);
+      window.sessionStorage.setItem("peliFavorita",JSON.stringify(favoritosArray));
+      document.querySelector("li button").innerHTML = "Agregar a favoritos"
+    }
+
+}
