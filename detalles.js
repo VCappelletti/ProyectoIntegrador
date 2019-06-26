@@ -16,14 +16,22 @@ window.addEventListener("load", function(){
       var ul = document.querySelector('section ul')
       // PARTE FIJA DE LA URL DE LA IMAGEN
       var urlImg = "https://image.tmdb.org/t/p/original"
-
+      var genero = ""
       var li = ""
       li = "<li>"
       li +=   "<p>"+objetoLiteralRespuesta.title+"</p>"
 
 
       li +=   "<img src='"+urlImg + objetoLiteralRespuesta.poster_path+"' style='width:25%;'>"
-      li +=   "<p>"+objetoLiteralRespuesta.overview+"</p>"
+      li +=   "<p class='overview'>"+objetoLiteralRespuesta.overview+"</p>"
+      li +=   "<p class='fechaDeLanzamiento'> Fecha de lanzamiento:  "+objetoLiteralRespuesta.release_date+"</p>"
+      li +=   "<p class='punteo'> Rating:  "+objetoLiteralRespuesta.vote_average+"</p>"
+      li +=   "<p class='duracion'> Duracion:  " + objetoLiteralRespuesta.runtime + " mins </p>"
+      for (var i = 0; i < objetoLiteralRespuesta.genres.length; i++) {
+        genero += objetoLiteralRespuesta.genres[i].name
+      }
+      li +=   "<p> Genero:  "+genero+"</p>"
+
       li += "</li>"
 
       ul.innerHTML += li
