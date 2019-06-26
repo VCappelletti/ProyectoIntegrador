@@ -1,10 +1,8 @@
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
-    <link rel="stylesheet" href="peliculas.css">
+    <link rel="stylesheet" href="peliculas.css"> 
     <link rel="stylesheet" href="css/uikit.min.css" />
-    <script src="js/uikit.min.js"></script>
-    <script src="js/uikit-icons.min.js"></script>
     <link href="https://fonts.googleapis.com/css?family=Ropa+Sans&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Press+Start+2P&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="https://use.fontawesome.com/releases/v5.8.2/css/all.css" integrity="sha384-oS3vJWv+0UjzBfQzYUhtDYW+Pj2yciDJxpsK1OYPAYjqT085Qq/1cq5FLXAZQ7Ay" crossorigin="anonymous">
@@ -17,12 +15,14 @@
               <nav>
                   <ul class="LOGO">
                      <div class="imgLogo">
-                      <a href="peliculas.html"><img class="img-logo" src="jedi.png" alt="jedi"></a></div>
+                      <a href="peliculas.html"><img class="img-logo" src="jedi.png" alt="jedi"></a>
+                    </div>
                   </ul>
                   <ul class=elresto>
                       <div class="generos">
-                         <a style="text-decoration:none" href="ProyectoIntegradorListadosGeneros/listadosGeneros.html">Genero</a></div>
-                      <div class="ultimo"><a  style="text-decoration:none" href="ProyectoIntegradorEstrenos/estrenos.html">Estrenos</a></div>
+                         <a style="text-decoration:none" href="ProyectoIntegradorListadosGeneros/listadosGeneros.html">Generos</a>
+                       </div>
+
                       <form class="busqueda" action="busqueda.html" method="get">
                         <input class="barradebusqueda" type="text" name="buscador" placeholder="¿Que quieres mirar?" >
                         <button type="submit"><i class="fas fa-search"></i></button>
@@ -31,18 +31,23 @@
                       <div class="favoritos">
                       <a style="text-decoration:none" href="ProyectoIntegradorFavoritos/favoritos.html">Favoritos</a>
                       </div>
-                      <div class="Populares">
-                        <a style="text-decoration:none" href="ProyectoIntegradorPopulares/populares.html">Populares</a>
-                      </div>
+                      <div class="login">
+                         <a style="text-decoration:none" href="login.html">Ingresar</a>
+                       </div>
                   </ul>
               </nav>
           </header>
-          <section class="todoelbody">
-         <div class="menu">
-    
-
-          </div>
-          </section>
+      <main>
+        <h2>Populares</h2>
+        <section class="populares">
+        </section>
+        <h2>Mejores</h2>
+        <section class="mejoresRanking">
+        </section>
+        <h2>Estrenos</h2>
+        <section class="estrenos">
+        </section>
+      </main>
           <footer>
             <img class="tmdb" src="logotmdb.png" alt="">
             <h2>
@@ -57,6 +62,9 @@
           </footer>
   </body>
 </html>
-<script type="text/javascript" src="peliculas.js">
-
-</script>
+<script src="js/uikit.min.js"></script>
+<script src="js/uikit-icons.min.js"></script>
+<script type="text/javascript" src="ProyectoIntegradorEstrenos/estrenos.js"></script>
+<script type="text/javascript" src="mejoresRanking.js"></script>
+<script type="text/javascript" src="ProyectoIntegradorPopulares/populares.js"></script>
+<script type="text/javascript" src="login.js"></script>

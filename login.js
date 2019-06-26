@@ -1,43 +1,32 @@
-window.onload = function() {
-API_KEY = "928ad4dee3a02646fa1725b8bcaa2a96"
-var url = " https://api.themoviedb.org/3/movie/popular?api_key="+API_KEY+"&page=1"
-fetch(url)
-.then(function(response){
-  return response.json();
-})
-.then(function(objetoLiteralRespuesta) {
-console.log(objetoLiteralRespuesta);
-var arrayPeliculas = objetoLiteralRespuesta.results
-
-var ul =
-
-for (var i = 0; i < arrayPeliculas.length; i++) {
-  arrayPeliculas[i]
-  // li = "<li>"
-  // li +=    "<div class='uk-panel'>"
-  // li +=        "<img src=''>"
-  // li +=         "<p>"+   title +"</p>"
-  // li +=    "</div>"
-  // li +="</li>"
-}
-
-})
-.catch(function(error) {
-  console.log("the error was: " + error);
-})
-
-function myFunction() {
-  var txt;
-  var person = prompt("Please enter your name:", "Harry Potter");
-  if (person == null || person == "") {
-    txt = "User cancelled the prompt.";
+window.addEventListener('load', function() {
+  var objetoPersona = JSON.parse(window.sessionStorage.getItem('user'))
+  if (objetoPersona != null && objetoPersona.nombre.length>0) {
+    // alert("Hola "+ objetoPersona.nombre)
+    document.querySelector("div.login a").innerHTML = objetoPersona.nombre
   } else {
-    txt = "Hello " + person + "! How are you today?";
-  }
-  document.getElementById("demo").innerHTML = txt;
-}
 
-}
+  }
+
+  document.querySelector("form").addEventListener("submit",function(event){
+    //FALTA VALIDAR LOS DATOS INGRESADOS EN CADA CAMPO
+    // event.preventDefault()
+    var usuario = document.querySelector("input[name=username]").value
+    var email = document.querySelector("input[name=email]").value
+    var genero = document.querySelector("input[name=genero]").value
+    var persona = {
+      nombre:usuario,
+      mail: email,
+      genre: genero
+    }
+    window.sessionStorage.setItem('user' , JSON.stringify(persona));
+    //JSON.parse(window.sessionStorage.getItem('user'));
+  })
+
+
+
+
+
+})
 // CUANDO INGRESO; DEBO INICIALIZAR EL ARRAY DONDE VOY A GUARDAR LAS PELIS FAVORITAS
 var arrayDePelisFavoritas = [] // ESTO IRIA LUEGO DE HACER LOG IN
 

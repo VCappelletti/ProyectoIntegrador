@@ -15,18 +15,36 @@
   <body>
     <header>
           <nav>
-              <ul class="LOGO">
-                 <div class="imgLogo">
-                   <img class="img-logo" src="jedi.png" alt="jedi">
+            <ul class="LOGO">
+               <div class="imgLogo">
+                <a href="peliculas.html"><img class="img-logo" src="jedi.png" alt="jedi"></a>
+              </div>
+            </ul>
+            <ul class=elresto>
+                <div class="generos">
+                   <a style="text-decoration:none" href="ProyectoIntegradorListadosGeneros/listadosGeneros.html">Generos</a>
+                 </div>
+
+                <form class="busqueda" action="busqueda.html" method="get">
+                  <input class="barradebusqueda" type="text" name="buscador" placeholder="¿Que quieres mirar?" >
+                  <button type="submit"><i class="fas fa-search"></i></button>
+
+                </form>
+                <div class="favoritos">
+                <a style="text-decoration:none" href="ProyectoIntegradorFavoritos/favoritos.html">Favoritos</a>
                 </div>
-              </ul>
+                <div class="login">
+                   <a style="text-decoration:none" href="login.html">Ingresar</a>
+                 </div>
+            </ul>
 
           </nav>
     </header>
           <section class="todoelbody">
-            <form method="post" action="peliculas.html" style="text-align: center; position: absolute; top: 250px; width: 100%;">
-              <input type="text" name="username" style="background-color: black; border-color: yellow; color: yellow; font-size: 1.5em; font-family: 'Press Start 2P',cursive; width: 50%; float: left; margin-left: 25%; margin-bottom: 35px; height: 50px; text-align: center;" required minlength="6">
-              <input type="password" name="password" style="background-color: black; border-color: yellow; color: yellow; font-size: 1.5em; font-family: 'Press Start 2P',cursive; width: 50%; float: left; margin-left: 25%; margin-bottom: 35px; height: 50px; text-align: center;" required minlength="6">
+            <form method="get" action="peliculas.html" style="text-align: center; position: absolute; top: 250px; width: 100%;">
+              <input placeholder="Usuario" type="text" name="username" style="background-color: black; border-color: yellow; color: yellow; font-size: 1.5em; font-family: 'Press Start 2P',cursive; width: 50%; float: left; margin-left: 25%; margin-bottom: 35px; height: 50px; text-align: center;" required minlength="6">
+              <input placeholder="Email" type="email" name="email" style="background-color: black; border-color: yellow; color: yellow; font-size: 1.5em; font-family: 'Press Start 2P',cursive; width: 50%; float: left; margin-left: 25%; margin-bottom: 35px; height: 50px; text-align: center;" required minlength="6">
+              <input placeholder="Genero" type="text" name="genero" style="background-color: black; border-color: yellow; color: yellow; font-size: 1.5em; font-family: 'Press Start 2P',cursive; width: 50%; float: left; margin-left: 25%; margin-bottom: 35px; height: 50px; text-align: center;" required minlength="6">
               <input class="submit"type="submit" value="Log In" style="background-color: black; border-color: yellow; color: yellow; font-size: 1.5em; font-family: 'Press Start 2P',cursive; width: 50%; float: left; margin-left: 25%; margin-bottom: 35px; height: 50px; text-align: center; ">
             </form>
           </section>

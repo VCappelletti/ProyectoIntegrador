@@ -1,5 +1,5 @@
 window.addEventListener("load",function() {
-  fetch("https://api.themoviedb.org/3/movie/upcoming?api_key=928ad4dee3a02646fa1725b8bcaa2a96&")
+  fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=928ad4dee3a02646fa1725b8bcaa2a96&")
   .then(function(respuesta){
    return respuesta.json()
   })
@@ -28,6 +28,6 @@ window.addEventListener("load",function() {
      div +=    '<a class="uk-position-center-left uk-position-small uk-hidden-hover" href="#" uk-slidenav-previous uk-slideshow-item="previous"></a>'
      div +=    '<a class="uk-position-center-right uk-position-small uk-hidden-hover" href="#" uk-slidenav-next uk-slideshow-item="next"></a>'
      div +=  '</div>'
-     document.querySelector("section.estrenos").innerHTML += div
+     document.querySelector("section.mejoresRanking").innerHTML += div
    })
 })
