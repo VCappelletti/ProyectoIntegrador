@@ -64,11 +64,6 @@ window.addEventListener("load", function(){
 })
 
 
-<<<<<<< Updated upstream
-function peliFavorita(id){console.log(id);
-
-}
-=======
 function peliFavorita(id){
   console.log(id);
 var favoritosArray = JSON.parse(window.sessionStorage.getItem("favoritosArray"))
@@ -91,4 +86,3 @@ if (favoritosArray.indexOf(id)>-1) {
   console.log(favoritosArray);
  }
  }
->>>>>>> Stashed changes
