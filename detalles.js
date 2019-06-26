@@ -31,6 +31,9 @@ window.addEventListener("load", function(){
         genero += objetoLiteralRespuesta.genres[i].name
       }
       li +=   "<p> Genero:  "+genero+"</p>"
+      li +=   "<input type='button' value='Favoritos' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>"
+
+
 
       li += "</li>"
 
@@ -57,4 +60,8 @@ window.addEventListener("load", function(){
       console.log("the error was: " + error);
     })
 
+
 })
+
+
+function peliFavorita(id){console.log(id);}
