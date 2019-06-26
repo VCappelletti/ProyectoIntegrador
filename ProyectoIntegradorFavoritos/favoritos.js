@@ -13,12 +13,12 @@ var ul =
 
 for (var i = 0; i < arrayPeliculas.length; i++) {
   arrayPeliculas[i]
-  // li = "<li>"
-  // li +=    "<div class='uk-panel'>"
-  // li +=        "<img src=''>"
-  // li +=         "<p>"+   title +"</p>"
-  // li +=    "</div>"
-  // li +="</li>"
+  li = "<li>"
+  li +=    "<div class='uk-panel'>"
+  li +=        "<img src=''>"
+  li +=         "<p>"+   title +"</p>"
+  li +=    "</div>"
+  li +="</li>"
 }
 
 })

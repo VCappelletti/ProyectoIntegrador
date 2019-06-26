@@ -31,7 +31,7 @@ window.addEventListener("load", function(){
         genero += objetoLiteralRespuesta.genres[i].name
       }
       li +=   "<p> Genero:  "+genero+"</p>"
-      li +=   "<input type='button' value='Favoritos' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>"
+      li +=   "<input type='button' value='Favoritos' class='boton-f' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>"
 
 
 
@@ -64,6 +64,31 @@ window.addEventListener("load", function(){
 })
 
 
+<<<<<<< Updated upstream
 function peliFavorita(id){console.log(id);
 
 }
+=======
+function peliFavorita(id){
+  console.log(id);
+var favoritosArray = JSON.parse(window.sessionStorage.getItem("favoritosArray"))
+if (favoritosArray != null && favoritosArray.lenght>0) {
+  console.log("existe y no esta vacio");
+if (favoritosArray.indexOf(id)>-1) {
+   favoritosArray.splice(favoritosArray.indexOf(id),1)
+   document.querySelector("input.boton-f").innerHTML = "Agregar a Favoritos"}
+   else {
+     favoritosArray.push(id)
+     document.querySelector("input.boton-f").innerHTML = "Eliminar de Favoritos"
+   }
+   window.sessionStorage.setItem("favoritosArray", JSON.stringify(favoritosArray));
+   console.log(favoritosArray);
+ } else {
+  favoritosArray = []
+  favoritosArray.push(id)
+  window.sessionStorage.setItem("favoritosArray",JSON.stringify(favoritosArray));
+  console.log("esta vacio");
+  console.log(favoritosArray);
+ }
+ }
+>>>>>>> Stashed changes
