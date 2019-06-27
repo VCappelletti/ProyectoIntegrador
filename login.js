@@ -7,10 +7,10 @@ window.addEventListener('load', function() {
 
   }
 
-  document.querySelector("section.todoelbody form").addEventListener("submit",function(event){
-    // console.log("login");
+  document.querySelector("section.todoelbody form").addEventListener('submit', function(event){
+    console.log(document.querySelector("section.todoelbody form"));
     //FALTA VALIDAR LOS DATOS INGRESADOS EN CADA CAMPO
-    // event.preventDefault()
+    //event.preventDefault()
     var usuario = document.querySelector("input[name=username]").value
     var email = document.querySelector("input[name=email]").value
     var genero = document.querySelector("input[name=genero]").value
