@@ -1,12 +1,12 @@
 window.addEventListener('load', function() {
   var objetoPersona = JSON.parse(window.sessionStorage.getItem('user'))
   if (objetoPersona != null && objetoPersona.nombre.length>0) {
+    JSON.parse(window.sessionStorage.getItem('user'));
     // alert("Hola "+ objetoPersona.nombre)
     document.querySelector("div.login a").innerHTML = objetoPersona.nombre
   } else {
 
   }
-
   document.querySelector("section.todoelbody form").addEventListener('submit', function(event){
     console.log(document.querySelector("section.todoelbody form"));
     //FALTA VALIDAR LOS DATOS INGRESADOS EN CADA CAMPO
@@ -20,7 +20,7 @@ window.addEventListener('load', function() {
       genre: genero
     }
     window.sessionStorage.setItem('user' , JSON.stringify(persona));
-    JSON.parse(window.sessionStorage.getItem('user'));
+
   })
 
 
