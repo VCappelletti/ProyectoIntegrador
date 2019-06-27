@@ -16,14 +16,25 @@ window.addEventListener("load", function(){
       var ul = document.querySelector('section ul')
       // PARTE FIJA DE LA URL DE LA IMAGEN
       var urlImg = "https://image.tmdb.org/t/p/original"
-
+      var genero = ""
       var li = ""
       li = "<li>"
       li +=   "<p>"+objetoLiteralRespuesta.title+"</p>"
 
 
       li +=   "<img src='"+urlImg + objetoLiteralRespuesta.poster_path+"' style='width:25%;'>"
-      li +=   "<p>"+objetoLiteralRespuesta.overview+"</p>"
+      li +=   "<p class='overview'>"+objetoLiteralRespuesta.overview+"</p>"
+      li +=   "<p class='fechaDeLanzamiento'> Fecha de lanzamiento:  "+objetoLiteralRespuesta.release_date+"</p>"
+      li +=   "<p class='punteo'> Rating:  "+objetoLiteralRespuesta.vote_average+"</p>"
+      li +=   "<p class='duracion'> Duracion:  " + objetoLiteralRespuesta.runtime + " mins </p>"
+      for (var i = 0; i < objetoLiteralRespuesta.genres.length; i++) {
+        genero += objetoLiteralRespuesta.genres[i].name
+      }
+      li +=   "<p> Genero:  "+genero+"</p>"
+      li +=   "<button type='button' value='Favoritos' class='boton-f' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>Agregar a Favoritos</button>"
+
+
+
       li += "</li>"
 
       ul.innerHTML += li
@@ -49,4 +60,33 @@ window.addEventListener("load", function(){
       console.log("the error was: " + error);
     })
 
+
 })
+
+
+  function peliFavorita(id){
+    console.log(id);
+    var favoritosArray = JSON.parse(sessionStorage.getItem("peliFavorita"))
+    console.log(favoritosArray);
+    if (favoritosArray == null) {
+      favoritosArray = []
+      console.log("es nulo, creo el array");
+    }
+
+    if (favoritosArray.indexOf(id)<0) {
+      console.log("no esta en el array");
+      console.log(favoritosArray);
+      favoritosArray.push(id)
+      window.sessionStorage.setItem("peliFavorita",JSON.stringify(favoritosArray));
+
+      console.log(sessionStorage);
+      document.querySelector("li button").innerHTML = "Quitar a favoritos"
+    }else{
+      console.log("esta en el array");
+      favoritosArray.splice(favoritosArray.indexOf(id), 1)
+      console.log(favoritosArray);
+      window.sessionStorage.setItem("peliFavorita",JSON.stringify(favoritosArray));
+      document.querySelector("li button").innerHTML = "Agregar a favoritos"
+    }
+
+}
