@@ -102,65 +102,8 @@ div.favoritos a:hover  {
 div.Populares a:hover {
   opacity: 0.8
 }
-
-
-
-
-main {
-background-image: url("spacee.jpg");
-height: 2750px;
-padding-top: 100px;
-}
-
-section.fondodemenu {
-background-color: black;
-box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
-width: 90%;
-height: 2500px;
-position: absolute;
-left: 5%;
-top: 50px;
-z-index: 0
-
-}
-
-section.populares {
-width: 80%;
-padding-left: 20%;
-
-
-}
-
-section.mejoresRanking {
-width: 80%;
-padding-left: 20%;
-
-
-}
-
-section.estrenos {
-width: 80%;
-padding-left: 20%;
-
-
-}
-
-
-
-
-
-h2.pop, h2.best, h2.estrenos {
-  z-index: 6;
-
-font-family: 'Press Start 2P', cursive;
-color: yellow;
-text-align: center;
-
-}
-
-
 section.todoelbody {
-  height: 2100px;
+  height: 2800px;
   margin-top: 75px;
   z-index: 0;
   background-image: url("spacee.jpg");
@@ -176,6 +119,38 @@ div.menu {
   background-color: black;
   z-index: 0;
 }
+main {
+  height: 2750px;
+}
+section.fondodemenu {
+  background-color: black;
+  box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+  width: 90%;
+  height: 2500px;
+  position: absolute;
+  left: 5%;
+  top: 50px;
+  z-index: 0
+}
+section.populares {
+  width: 80%;
+  padding-left: 20%;
+}
+section.mejoresRanking {
+  width: 80%;
+  padding-left: 20%;
+}
+section.estrenos {
+  width: 80%;
+  padding-left: 20%;
+}
+h2.pop, h2.best, h2.estrenos {
+  z-index: 6;
+  font-family: 'Press Start 2P', cursive;
+  color: yellow;
+  text-align: center;
+}
+
 footer { background-color: black;
   position: absolute;
   box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;

@@ -23,14 +23,14 @@ window.addEventListener("load", function(){
 
 
       li +=   "<img src='"+urlImg + objetoLiteralRespuesta.poster_path+"' style='width:25%;'>"
-      li +=   "<p class='overview'>"+objetoLiteralRespuesta.overview+"</p>"
-      li +=   "<p class='fechaDeLanzamiento'> Fecha de lanzamiento:  "+objetoLiteralRespuesta.release_date+"</p>"
-      li +=   "<p class='punteo'> Rating:  "+objetoLiteralRespuesta.vote_average+"</p>"
-      li +=   "<p class='duracion'> Duracion:  " + objetoLiteralRespuesta.runtime + " mins </p>"
+      li +=   "<p style='font-size: 1em'class='overview'>"+objetoLiteralRespuesta.overview+"</p>"
+      li +=   "<p style='font-size: 1em'class='fechaDeLanzamiento'> Fecha de lanzamiento:  "+objetoLiteralRespuesta.release_date+"</p>"
+      li +=   "<p style='font-size: 1em'class='punteo'> Rating:  "+objetoLiteralRespuesta.vote_average+"</p>"
+      li +=   "<p style='font-size: 1em'class='duracion'> Duracion:  " + objetoLiteralRespuesta.runtime + " mins </p>"
       for (var i = 0; i < objetoLiteralRespuesta.genres.length; i++) {
         genero += objetoLiteralRespuesta.genres[i].name
       }
-      li +=   "<p> Genero:  "+genero+"</p>"
+      li +=   "<p style='font-size: 1em'> Genero:  "+genero+"</p>"
       li +=   "<button type='button' value='Favoritos' class='boton-f' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>Agregar a Favoritos</button>"
 
 

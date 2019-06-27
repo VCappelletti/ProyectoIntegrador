@@ -5,7 +5,7 @@ window.addEventListener("load",function() {
   })
   .then(function(informacion){
      console.log(informacion);
-     var div = '<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: push">'
+     var div = '<div class="uk-position-relative uk-visible-toggle uk-light" tabindex="-1" uk-slideshow="min-height: 300; max-height: 600; animation: push;">'
          div +=        '<ul class="uk-slideshow-items">'
      var li = ""
      var arrayDePelis = informacion.results
