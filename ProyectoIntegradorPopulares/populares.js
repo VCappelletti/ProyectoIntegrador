@@ -18,7 +18,7 @@ window.addEventListener("load",function() {
        var puntos = arrayDePelis[i].vote_average
        // li = '<li>'
        li =     '<a href="detalles.html?idPelicula='+id+'">'
-       li +=        '<img src="https://image.tmdb.org/t/p/original/'+ url +'" alt="" uk-cover>'
+       li +=        '<img src="https://image.tmdb.org/t/p/original/'+ url +'" alt="" uk-cover style="border:inset;">'
        li +=  '</a>'
        // li += '</li>'
 

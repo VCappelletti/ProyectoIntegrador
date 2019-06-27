@@ -9,7 +9,7 @@ fetch("https://api.themoviedb.org/3/genre/movie/list?api_key=928ad4dee3a02646fa1
    var div = ""
    for (var i = 0; i < arrayDeGeneros.length; i++) {
      div = "<div>"
-     div +=   "<h3><a herf='generos.html?idDeGenero="+ arrayDeGeneros[i].id +"&genero="+ arrayDeGeneros[i].name +"'>"
+     div +=   "<h3><a style='text-decoration: none; color: yellow;' href='../ProyectoIntegradorGeneros/generos.html?idDeGenero="+ arrayDeGeneros[i].id +"&genero="+ arrayDeGeneros[i].name +"'>"
      div +=        arrayDeGeneros[i].name
      div +=   "</a></h3>"
      div += "</div>"

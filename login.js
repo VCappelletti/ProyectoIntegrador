@@ -24,11 +24,8 @@ window.addEventListener('load', function() {
   })
 
 
-
-
-
 })
-// CUANDO INGRESO; DEBO INICIALIZAR EL ARRAY DONDE VOY A GUARDAR LAS PELIS FAVORITAS
+//CUANDO INGRESO; DEBO INICIALIZAR EL ARRAY DONDE VOY A GUARDAR LAS PELIS FAVORITAS
 var arrayDePelisFavoritas = [] // ESTO IRIA LUEGO DE HACER LOG IN
 
 function agregarFavoritos(id) {

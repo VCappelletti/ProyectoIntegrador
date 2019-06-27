@@ -21,5 +21,5 @@ fetch("https://api.themoviedb.org/3/discover/movie?api_key=928ad4dee3a02646fa172
      var fecha = arrayDePelis[i].release_date
      var puntos = arrayDePelis[i].vote_average
 
-     document.querySelector("div.menu").innerHTML +='<div class="general"><a class="poster" posArray="' + i + '" idPelicula="' + id + '" href="#modal-example" uk-toggle><img src="https://image.tmdb.org/t/p/original/'+ url +'" width="300px"></a></div>'
+     document.querySelector("div.menu").innerHTML +='<div class="general"><a class="poster" posArray="' + i + '" idPelicula="' + id + '" href="detalles.html?idPelicula='+id+'" uk-toggle><img src="https://image.tmdb.org/t/p/original/'+ url +'" width="300px"></a></div>'
    }})

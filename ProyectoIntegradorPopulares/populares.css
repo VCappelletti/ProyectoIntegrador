@@ -199,7 +199,8 @@ img.tmdb { position: absolute;
   width: 217px;
 }
 
-h2.tituloPopulares{   font-size: 1.5em;
+h2.tituloPopulares{
+  font-size: 1.5em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
   margin-top: 20px;
@@ -207,7 +208,8 @@ h2.tituloPopulares{   font-size: 1.5em;
   text-align: center;
   padding-top:20px
 }
-  h3{   font-size: 1em;
+  h3{
+    font-size: 1em;
     font-weight: bold;
     font-family: 'Press Start 2P', cursive;
     margin-top: 20px;
@@ -216,7 +218,8 @@ h2.tituloPopulares{   font-size: 1.5em;
     padding-top:20px;
     z-index: 1
 }
-h4{   font-size: 1em;
+h4{
+  font-size: 1em;
   font-weight: bold;
   font-family: 'Press Start 2P', cursive;
   margin-top: 20px;
