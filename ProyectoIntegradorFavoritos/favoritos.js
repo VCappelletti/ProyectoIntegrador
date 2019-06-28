@@ -18,15 +18,21 @@ if (favoritosArray != null) {
     .then(function(objetoLiteralRespuesta) {
       console.log(objetoLiteralRespuesta);
 
-      //insertar en html
-      var fav = document.querySelector('div.menu')
+
+      var ul = document.querySelector('section ul')
+            var urlImg = "https://image.tmdb.org/t/p/original"
+        //insertar en html
       var li = ""
-      li = "<li>"
-      li += "<p>"+objectoLiteralRespuesta.title+"</p>"
+      li += "<li>"
+      li +=   "<p>"+objetoLiteralRespuesta.title+"</p>"
+      li +=   "<img src='"+urlImg + objetoLiteralRespuesta.poster_path+"' style='width:25%;'>"
 
 
 
 
+      li += "</li>"
+
+      ul.innerHTML += li
 
     })
     .catch(function(error) {
