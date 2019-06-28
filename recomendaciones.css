@@ -8,14 +8,15 @@ header {
   left: 0;
   background-color: black;
   top: 0;}
+
 img {
   object-fit: cover;
   width: 200px;
-  height:40px;
+  height: 40px;
 }
 body {
-  width: 100%;
   margin-left: 0;
+  width: 100%;
 }
 nav {
   width: 100%;
@@ -29,7 +30,6 @@ ul.LOGO {
 img.img-logo {
   position: relative;
   width: 192px;
-  height: 67px;
 }
 ul.elresto {
   padding-left: 0;
@@ -37,6 +37,7 @@ ul.elresto {
   width: 80%;
   justify-content: space-around;
   margin-top: 25px;
+}
 }
 div.generos a:hover {
   opacity: 0.8
@@ -47,7 +48,7 @@ div.ultimo,div.favoritos,  div.Populares, div.generos  {
   font-family: 'Press Start 2P', cursive;
   margin-top: 2px;
 }
-form.busqueda {
+div.buscador {
       margin-top: -6px;
       position: relative;
 }
@@ -58,19 +59,17 @@ opacity: 0.8
 }
 
 form {
-position: relative;
-
+  position:relative;
 }
 .barradebusqueda {height: 35px;
-  font-family: 'Ropa Sans', sans-serif;
-  text-align: left ;
-  letter-spacing: 1px;
+font-family: 'Ropa Sans', sans-serif;
+text-align: left ;
+letter-spacing: 1px;
   border-radius: 50px;
   width: 250px;
   box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
   border: none;
 }
-
 
 button {
 border: none;
@@ -82,6 +81,7 @@ left: 88%;
 height: 40px;
 size: 40px;
 }
+
 .boton {
   position: absolute;
   top:-2px;
@@ -98,16 +98,36 @@ div.favoritos a:hover  {
   opacity: 0.8
 }
 div.Populares a:hover {
-  opacity: 0.8
+opacity: 0.8
+}
+
+h2 {
+  font-size: 1.1em;
+  font-weight: bold;
+  font-family: 'Press Start 2P', cursive;
+  color: yellow;
+  margin-top: 0;
+}
+
+h2.generosPeli {
+  font-size: 1.5em;
+  text-align: center;
+  padding-left: 0;
+}
+h2 {
+  text-align: left;
+  padding-top: 20px;
+  padding-left: 15px;
 }
 section.todoelbody {
-  height: 2100px;
   margin-top: 75px;
   z-index: 0;
   background-image: url("spacee.jpg");
   background-size: cover;
   margin-left: -10px;
+  height: 2100px;
 }
+
 div.menu {
   width: 90%;
   position: relative;
@@ -117,27 +137,65 @@ div.menu {
   background-color: black;
   z-index: 0;
 }
-p.login {
-  font-size: 1em;
-  font-weight: bold;
-  font-family: 'Press Start 2P', cursive;
-  margin-top: 2px;
-  color: yellow;
+div.menu div ul {
+  padding-left: 0;
+  overflow: hidden;
+}
+div.menu div ul li{
+  width: 30%;
+  float: left;
+  margin-right: 3%;
+  margin-left: 2%;
+  height: 700px;
+}
+div.menu div ul li:nth-child(3n){
+  margin-left: 0;
+  margin-right: 2%;
+}
+div.menu div ul li:nth-child(2n){
+  margin-left: 0;
+}
+div.menu div ul li a p {
+    text-align: center;
+    font-size: 1em;
+    font-weight: bold;
+    font-family: 'Press Start 2P', cursive;
+    text-decoration: none;
+    color: yellow;
+}
+div.menu div ul li a img {
+      width: 100%;
+      height: 619px;
+    }
+div.general {
+  width: 18%;
+  margin-right: 1%;
+  margin-left: 1%;
+  margin-bottom: 30px;
+  float: left;
+  height: 350px;
+}
+
+div.general a img {
+  height: 100%;
+  width: 100%;
 }
 footer {
   background-color: black;
   position: absolute;
   box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
   width: 100%;
-  top: 2080px;
   left: 0;
   padding-right: 0;
+  height: 150px;
+  top: 2080px;
 }
 
 footer h2 {
   color: yellow;
   font-family: 'Press Start 2P', cursive;
   font-size: 15px;
+  padding-top: 10px;
   padding-left: 20px;
 }
 
@@ -146,4 +204,24 @@ img.tmdb { position: absolute;
   top: 22%;
   z-index: 5;
   height: 85px;
-  width: 217px;
+  width: 217px;}
+
+
+
+
+
+
+  @media only screen and (max-width: 420px){
+
+
+
+
+  div.mySlides1 { width: 100%;
+
+
+  }
+
+
+
+
+  }
