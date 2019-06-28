@@ -248,53 +248,68 @@ img.tmdb { position: absolute;
 
 
 
-  @media only screen and (max-width: 420px){
+@media only screen and (max-width: 420px) {
 
-    header { width: 100%;
-    position: fixed;
-    z-index: 2;
-    box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
-    left: 0;
-    height: 200px;
-    background-color: black;
-    top: 0;}
+  nav {
+    width: 100%;
+    height:200px;
+    display: flex;
+    flex-wrap: wrap;
+  }
 
-    div.ultimo,div.favoritos,  div.Populares, div.generos  {
-      font-size: 0.7em;
-      font-weight: bold;
-      font-family: 'Press Start 2P', cursive;
-      margin-top: 2px;
+  img.img-logo {
+    width: 125px;
+
+
+
+
+  }
+
+  div.generos {
+  position: absolute;
+  top: 46%;
+  left: 11%;
+
+
+
+
+  }
+
+  div.favoritos {
+position: absolute;
+top: 46%;
+left: 54%;
+  }
+
+  div.login {
+    position: absolute;
+    top: 18%;
+    left: 53.5%;
+  }
+
+  form.busqueda { position:relative;
+    top: 79%;
+    left: -12%;
+
     }
 
-    ul.LOGO {
-      width: 20%;
-      position: absolute;
-      left: 12%;
 
-    }
-
-    .barradebusqueda {height: 30px;
-      position: absolute;
-      top: 70px;
+  .barradebusqueda {height: 29px;
     font-family: 'Ropa Sans', sans-serif;
     text-align: left ;
     letter-spacing: 1px;
-      border-radius: 50px;
-      width: 150px;
-      box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
-      border: none;
-    }
+    border-radius: 50px;
+    width: 250px;
+    box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+    border: none;}
 
-    div.generos { margin-top: 100px;
-      margin-left: 100px;
 
-    }
-
-    section.todoelbody { height: 3450px;
+    section.todoelbody { height: 9250px;
     margin-top: 200px;
     z-index: 0;
     background-image: url("../spacee.jpg");
     background-size: cover;
+    background-repeat: repeat-y;
     margin-left: -10px;
     }
 
@@ -302,7 +317,7 @@ img.tmdb { position: absolute;
     div.menu { width: 90%;
       position: relative;
       margin: 0 auto;
-      height: 3150px;
+      height: 9150px;
       box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
       background-color: black;
       z-index: 0;}
@@ -324,7 +339,7 @@ img.tmdb { position: absolute;
     position: absolute;
   box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
   width: 100%;
-  top: 3400px;
+  top: 9400px;
   left: 0;
   padding-right: 0;
   height: 270px;
@@ -336,6 +351,4 @@ img.tmdb { position: absolute;
     z-index: 5;
     height: 85px;
     width: 217px;
-  }
-
   }

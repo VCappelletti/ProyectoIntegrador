@@ -185,7 +185,102 @@ img.tmdb {
 
 @media only screen and (max-width: 420px) {
 
+  nav {
+    width: 100%;
+    height:150px;
+    display: flex;
+    flex-wrap: wrap;
+  }
+
+  div.imgLogo {
+    width: 125px;
 
 
+
+
+  }
+
+  div.generos {
+  position: absolute;
+  top: 46%;
+  left: 11%;
+
+
+
+
+  }
+
+  div.favoritos {
+position: absolute;
+top: 46%;
+left: 54%;
+  }
+
+  div.login {
+    position: absolute;
+    top: 18%;
+    left: 53.5%;
+  }
+
+  form.busqueda { position:relative;
+    top: 79%;
+    left: -12%;
+
+    }
+
+
+  .barradebusqueda {height: 29px;
+    font-family: 'Ropa Sans', sans-serif;
+    text-align: left ;
+    letter-spacing: 1px;
+    border-radius: 50px;
+    width: 250px;
+    box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+    border: none;}
+
+
+
+
+  main {
+    height: 180px;
+  }
+
+  section.todoelbody {
+    height: 1500px;
+    margin-top: 145px;
+    z-index: 0;
+    background-image: url("spacee.jpg");
+    background-size: cover;
+    margin-left: -10px;}
+
+  div.menu {
+    width: 90%;
+    position: relative;
+    margin: 0 auto;
+    height: 80%;
+    box-shadow: -2px -2px 5px lightblue, 2px 2px 5px lightblue;
+    background-color: black;
+    z-index: 0;
+  }
+
+
+
+  footer { background-color: black;
+    position: absolute;
+  box-shadow: -2px -2px 5px yellow, 2px 2px 5px yellow;
+  width: 100%;
+  top: 1400px;
+  left: 0;
+  padding-right: 0;
+  height: 290px;
+  }
+
+  img.tmdb { position: absolute;
+    left: 4%;
+    top: 68%;
+    z-index: 5;
+    height: 85px;
+    width: 217px;
+  }
 
 }
