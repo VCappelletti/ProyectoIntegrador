@@ -33,16 +33,17 @@ window.addEventListener("load", function(){
       li +=   "<p style='font-size: 1em; padding-top: 20px'> Genero:  "+genero+"</p>"
       li +=   "<button type='button' value='Favoritos' class='boton-f' onclick='peliFavorita("+objetoLiteralRespuesta.id+")'>Agregar a Favoritos</button>"
       li +=   "<p style='font-size 1em; padding-top: 20px'> Recomendaciones </p>"
-        fetch("https://api.themoviedb.org/3/movie/top_rated?api_key=928ad4dee3a02646fa1725b8bcaa2a96&")
+        fetch("https://api.themoviedb.org/3/movie/"+idPelicula+"/recommendations?api_key=928ad4dee3a02646fa1725b8bcaa2a96&language=en-US&page=1")
         .then(function(respuesta){
          return respuesta.json()
         })
         .then(function(informacion){
            console.log(informacion);
             var arrayDePelis = informacion.results
-             var id = arrayDePelis[i].id
-             var url = arrayDePelis[i].poster_path
-                var titulo =  arrayDePelis[i].title
+            
+            var id = arrayDePelis[i].id
+            var url = arrayDePelis[i].poster_path
+            var titulo =  arrayDePelis[i].title
 
        li =     '<a href="detalles.html?idPelicula='+id+'">'
        li +=        '<img src="https://image.tmdb.org/t/p/original/'+ url +'" alt="" uk-cover>'
